@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'template.html' %}
+    	
+{% block title %}Invite{% endblock title %}
 
-<head>
+{% block head %}
+{% block style %}
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title></title>
-	
     <link href="../static/fourth_frame.css" rel="stylesheet">
 
 
@@ -17,14 +14,11 @@
       }
      </style>
 
+{% endblock style %}
+{% block content %}
 
-</head>
-
-<body>
 <div>
 <p> The invite is being sent! </p>
 </div>
-</body>
-
-</html>
+{% endblock content %}
 

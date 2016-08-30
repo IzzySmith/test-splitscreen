@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'template.html' %}
+    	
+{% block title %}Share{% endblock title %}
 
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Splitscreen</title>
+{% block head %}
+{% block style %}
 
 <link href="../static/splitscreen.css" rel="stylesheet">
 <link href="../static/page_top.css" rel="stylesheet">
@@ -15,6 +15,8 @@
 
 <!-- js file -->
 <script type="text/javascript" src="../static/splitscreen.js" ></script>
+
+{% endblock style %}
 
 <script>
 (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
@@ -83,9 +85,10 @@ window.addEventListener('DOMContentLoaded', function() {
  });
 </script>
 
-</head>
+{% endblock head %}
 
-<body>
+{% block content %}
+
 <div id="menu">
 	<div id="menu_right">
 		<button class="button" id="exit_button" onclick="exitSession()">Exit</button>
@@ -119,7 +122,5 @@ window.addEventListener('DOMContentLoaded', function() {
 <!-- define form behaviour -->
 <script type="text/javascript" src="../static/form.js" ></script>
 
-</body>
-
-</html>
+{% endblock content %}
 

@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'template.html' %}
+    	
+{% block title %}Share{% endblock title %}
 
-<head>
-
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    
-    <title>Share</title>
+{% block head %}
+{% block style %}
 
     <!-- Bootstrap Core CSS -->
-    <link href="../static/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link href="../static/stylish-portfolio.css" rel="stylesheet">
-    <link href="../static/popup_link.css" rel="stylesheet">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-stylish-portfolio/3.3.7/css/stylish-portfolio.css" rel="stylesheet">
+    <link href="../static/share.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="../static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -20,9 +18,10 @@
 
    <script type="text/javascript" src="../static/share.js" ></script> 
 
-</head>
+{% endblock style %}
+{% endblock head %}
 
-<body>
+{% block content %}
 
     <header id="top" class="header">
         <div class="text-vertical-center">
@@ -56,5 +55,4 @@
         </div>
     </header>
 
-</body>
-</html>
+{% endblock content %}

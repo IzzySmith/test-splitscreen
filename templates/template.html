@@ -6,16 +6,14 @@
     	<meta charset="utf-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    	<title> {% block title %} {% endblock %} - Template </title>
+    	<title>{% block title %}{% endblock title %}</title>
 
 	<!-- Custom CSS/ scripts -->
-	{% block style %} {% endblock %}
+	{% block style %} {% endblock style %}
 
-    {% endblock %}
+    {% endblock head %}
 </head>
 
-    <div id="content">{% block content %}{% endblock %}</div>
-
-</body>
+    <body>{% block content %}{% endblock content %}</body>
 
 </html>
