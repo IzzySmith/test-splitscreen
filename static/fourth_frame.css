@@ -17,6 +17,8 @@ p{
   	text-transform: uppercase;
 }
 
-      body {
-         background-image: url('../static/sunset.jpg');
-      }
+body {
+       background-image: url('../static/sunset.jpg');
+}
+
+

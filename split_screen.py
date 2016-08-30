@@ -4,7 +4,7 @@ import json
 import sys
 from flask import Flask, request, make_response, render_template
 from werkzeug.routing import Rule, Map, BaseConverter, ValidationError
-import mandrill
+# import mandrill
 
 app = Flask(__name__)
 
@@ -31,6 +31,7 @@ def index_session_id(session_id):
 
 @app.route('/share', methods = ['POST', 'GET'])
 def share():
+   """
    if request.method == 'POST':
       try:
          email_address = request.form[ 'emailAddress' ]
@@ -39,7 +40,7 @@ def share():
          message = {
             'from_email': 'splitscreen@surfly.com',
             'to': [{'email': email_address}],
-            'html':'<h4>You have been invited to a splitscreen session!</h4><p><a   href='+email_link+'>Join the session</a></p><p><img src="cid:logo"/></p>',
+            'html':'<h4>You have been invited to a splitscreen session!</h4><p><a href='+email_link+'>Join the session</a></p><p><img src="cid:logo"/></p>',
             'subject':'Invitation to a splitscreen session',
             'images': [{'content': surfly_encoded_logo,
                     'name': 'logo',
@@ -50,7 +51,8 @@ def share():
          return render_template('error.html', error=e)
          raise
    else:
-      return render_template('share.html')
+   """
+   return render_template('share.html')
 
 
 
