@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'template.html' %}
+    	
+{% block title %}Share{% endblock title %}
 
-<head>
+{% block head %}
+{% block style %}
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    
-    <title>Share</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="../static/bootstrap.min.css" rel="stylesheet">
+ {{ super() }}
 
     <!-- Custom CSS -->
-    <link href="../static/stylish-portfolio.css" rel="stylesheet">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-stylish-portfolio/3.3.7/css/stylish-portfolio.css" rel="stylesheet">
     <link href="../static/popup_link.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
@@ -20,9 +17,9 @@
 
    <script type="text/javascript" src="../static/share.js" ></script> 
 
-</head>
-
-<body>
+{% endblock style %}
+{% endblock head %}
+{% block content %}
 
     <header id="top" class="header">
         <div class="text-vertical-center">
@@ -55,6 +52,4 @@
             <br>
         </div>
     </header>
-
-</body>
-</html>
+{% block content %}
