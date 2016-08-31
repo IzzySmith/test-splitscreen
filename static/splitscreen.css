@@ -14,3 +14,8 @@
   border-bottom: green 3px solid;
 }
 
+.box {
+  height: 100%;
+  width: 100%;
+}
+

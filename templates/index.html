@@ -10,7 +10,8 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-stylish-portfolio/3.3.7/css/stylish-portfolio.css" rel="stylesheet">
 
 <!-- Custom CSS -->
-<link href="{{ url_for('static', filename='index.css') }}" rel="stylesheet"> 
+<link href="../static/index.css" rel="stylesheet"> 
+
 {% endblock style %}
 {% endblock head %} 
 
@@ -19,10 +20,10 @@
 <header class="index-header">
     <div class="header-content">
         <div class="header-content-inner">
-            <hr>
+            <hr id="index-hr">
             <p>From this page, you can start a splitscreen co-browsing session!</p>
             <hr>
-            <button id="bu" onclick="startSplitscreen()" class="btn btn-primary btn-xl page-scroll">Start splitscreen session</button>
+            <button id="index-bu" onclick="startSplitscreen()" class="btn btn-primary btn-xl page-scroll">Start splitscreen session</button>
         </div>
     </div>
 </header>

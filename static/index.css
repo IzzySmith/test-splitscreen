@@ -1,4 +1,4 @@
-#bu{
+button .btn .btn-primary .btn-xl #index-bu{
   background-color: #ea2020;
   border-color: black;
   border-width: medium;
@@ -15,7 +15,7 @@
 }
 
 
-hr{
+hr #index-id{
   color: white;
   background-color: white;
   height: 5px;
@@ -27,3 +27,4 @@ header .header-content .header-content-inner p {
   color: white; 
   font-size: 34px;
 }
+
